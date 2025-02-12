@@ -126,21 +126,21 @@ button:hover {
 
 @media (max-width: 1000px) {
   .search {
-    width: 30%; /* Gör sökrutan bredare */
+    width: 30%;
   }
 }
 
 @media (max-width: 768px) {
   .search {
-    width: 50%; /* Gör sökrutan bredare */
+    width: 50%;
   }
 
   .split {
-    flex-direction: column; /* Lägger sektionerna på varandra */
+    flex-direction: column;
   }
   .left,
   .right {
-    width: 100%; /* Gör varje del bredare */
+    width: 100%;
     padding-left: 0;
     margin: 5px 0;
   }
