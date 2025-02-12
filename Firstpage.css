@@ -1,0 +1,155 @@
+.search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20%;
+
+  padding-top: 5px;
+}
+
+body {
+  margin: 0px;
+}
+
+.header {
+  border: 1px solid black;
+  padding: 10px;
+}
+.companyName span {
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.companyView {
+  padding-left: 30px;
+
+  padding-top: 30px;
+}
+.search input {
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 14px;
+  border: 1px solid #0b0b0b;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.search button {
+  border-radius: 25px;
+  padding: 12px 20px;
+  margin-left: 10px;
+  background-color: #7b7b7c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #202021;
+}
+
+.split {
+  display: flex;
+  margin-top: 20px;
+}
+.left {
+  width: 50%;
+
+  margin: 10px;
+  padding-left: 20px;
+}
+.diagonal-line {
+  width: 299px;
+  height: 15px;
+  border-bottom: 1px solid rgb(122, 122, 122);
+  transform: rotate(-90deg);
+  padding-top: 10px;
+}
+
+.right {
+  width: 50%;
+  margin: 11px;
+}
+
+.left ul,
+.right table {
+  border: solid 1px;
+  list-style: none;
+  padding: 15px;
+}
+
+.left li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 17px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+.api-error {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media (max-width: 1000px) {
+  .search {
+    width: 30%; /* Gör sökrutan bredare */
+  }
+}
+
+@media (max-width: 768px) {
+  .search {
+    width: 50%; /* Gör sökrutan bredare */
+  }
+
+  .split {
+    flex-direction: column; /* Lägger sektionerna på varandra */
+  }
+  .left,
+  .right {
+    width: 100%; /* Gör varje del bredare */
+    padding-left: 0;
+    margin: 5px 0;
+  }
+
+  .diagonal-line {
+    width: 299px;
+    height: 15px;
+    border-bottom: 1px solid rgb(57, 56, 56);
+    transform: rotate(-90deg);
+    display: none;
+  }
+}
