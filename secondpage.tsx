@@ -83,12 +83,10 @@ const SecondPage = () => {
           <div>
             <h2>{companyDetails.Name}</h2>
             <p>
-              <p>
-                <strong>Address:</strong> {companyDetails.Address || "N/A"}
-              </p>
-              <strong>Market Capitalization:</strong>{" "}
-              {companyDetails.MarketCapitalization}
+              <strong>Address:</strong> {companyDetails.Address || "N/A"}
             </p>
+            <strong>Market Capitalization:</strong>{" "}
+            {companyDetails.MarketCapitalization}
             <div className="companyDetails">
               <p>{companyDetails.Description}</p>
             </div>
